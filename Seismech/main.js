@@ -1,16 +1,7 @@
-$(document).ready(function(){
-
-    var checkScrollBar = function(){
-      $('.bg-dark').css({
-        backgroundColor: $(this).scrollTop() > 1 ?
-          'rgb(0, 0, 0)' : 'transparent'
-      })
-    }
-    $(window).on('load resize scroll', checkScrollBar)
-    });
-
-
-
+window.onscroll = () => {
+    const nav = document.querySelector('#navba');
+    if(this.scrollY <= 300) nav.className = 'navbar fixed-top navbar-expand-lg navbar-dark black'; else nav.className = 'navbar fixed-top navbar-expand-lg navbar-dark black scroll';
+  };
 
 
     var TxtRotate = function(el, toRotate, period) {
