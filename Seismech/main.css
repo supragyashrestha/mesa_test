@@ -1,103 +1,71 @@
-#rig {
-    max-width:100%;
-    margin:0 auto; /*center aligned*/
-    padding:0;
-    font-size:0; /* Remember to change it back to normal font size if have captions */
-    list-style:none;
-    background-color:#000;
+.intro-2 {
+    background: url("./img/coverPhoto_seismech.jpg")no-repeat center center;
+    background-size: cover;
 }
-#rig li {
-    display: inline-block;
-    *display:inline;/*for IE6 - IE7*/
-    width:25%;
-    vertical-align:middle;
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
-        
-/* The wrapper for each item */
-.rig-cell {
-    /*margin:12px;
-    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
-    display:block;
-    position: relative;
-    overflow:hidden;
-}
-        
-/* If have the image layer */
-.rig-img {
-    display:block;
-    width: 100%;
-    height: auto;
-    border:none;
-    transform:scale(1);
-    transition:all 1s;
+html,
+body,
+header,
+.view {
+    height: 100%;
 }
 
-#rig li:hover .rig-img {
-    transform:scale(1.05);
-}
-        
-/* If have the overlay layer */
-.rig-overlay {
-    position: absolute;
-    display:block;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    background: #3DC0F1 url(img/link.png) no-repeat center 20%;
-    background-size:50px 50px;
-    opacity:0;
-    filter:alpha(opacity=0);/*For IE6 - IE8*/
-    transition:all 0.6s;
-}
-#rig li:hover .rig-overlay {
-    opacity:0.8;
-}
-
-/* If have captions */
-.rig-text {
-    display:block;
-    padding:0 30px;
-    box-sizing:border-box;
-    position:absolute;
-    left:0;
-    width:100%;
-    text-align:center;
-    text-transform:capitalize;
-    font-size:18px;
-    font-weight:bold;
-    font-family: 'Oswald', sans-serif;
-    font-weight:normal!important;
-    top:40%;
-    color:white;
-    opacity:0;
-    filter:alpha(opacity=0);/*For older IE*/
-    transform:translateY(-20px);
-    transition:all .3s;
-}
-#rig li:hover .rig-text {
-    transform:translateY(0px);
-    opacity:0.9;
-}
-
-@media (max-width: 9000px) {
-    #rig li {
-        width:33.33%;
+#heading 
+        {
+            height:100vh;
+            width:100%;
+            background-color:grey;
+            text-align: center;
+    
+        }
+    .vertical 
+    {
+            color:white;
+            vertical-align:middle;
+            font-weight: 900;
+            font-size: 100px;
+            margin: auto 0;
     }
+    .vertical_1 
+        {
+            color:white;
+            vertical-align:middle;
+            font-weight: 500;
+            margin: 0.4em 0;
+    }
+
+.bg-dark {
+    background-color: rgba(255, 0, 0, 0)!important;
+    padding-top: 20px;
 }
 
-@media (max-width: 1200px) {
-    #rig li {
-        width:50%;
-    }
+ul.nav a:hover { color: rgb(0, 0, 0) !important; }
+
+.heading{
+    height: 100vh;
+    background-color: grey;
 }
 
-@media (max-width: 600px) {
-    #rig li {
-        width:100%;
-    }
-}
+.typewriter h3 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
