@@ -3,7 +3,7 @@
         {
             height:100vh;
             width:100%;
-            background-color:grey;
+            background: url('./img/main_gear1.jpg')  100% 100% no-repeat;
             text-align: center;
     
         }
@@ -23,6 +23,7 @@
             vertical-align:middle;
             font-weight: 500;
             margin: 0.4em 0;
+            padding-bottom: 20%;
     }
 
 .bg-dark {
@@ -40,6 +41,14 @@ ul.nav a:hover { color: rgb(0, 0, 0) !important; }
 section {padding:10rem;}
 .bg-primary {background-color:#007aeb;color:#fff;}
 
+nav.unscroll {
+    background-color: white;
+    color: black;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+  }
+
 nav.scroll {
     background-color: orange;
     color: black;
@@ -48,3 +57,14 @@ nav.scroll {
     box-shadow: 0 8px 6px -6px #999;
   }
 
+.highlights{
+    background-image: url('./img/gear.jpg') !important;   
+}
+
+.text-white{
+    color: white;
+}
+
+.text-dark{
+    color: darkslategray;
+}
